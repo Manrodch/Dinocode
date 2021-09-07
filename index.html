@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="fondo">
+      <div>
+        <h1 id="title">dinofetus Collection</h1>
+      </div>
+
+      <div id="dinosdiv" class="form">
+        <h2>Dino Name</h2>
+
+        <input type="text" id="dinoName" class="Margin" />
+
+        <h2>Race</h2>
+
+        <input type="text" id="race" class="Margin" />
+
+        <h2>Genetic</h2>
+
+        <input type="text" id="genetic" class="Margin" />
+
+        <h2>Strength</h2>
+
+        <input type="number" id="strength" class="Margin" />
+
+        <button type="button" id="button" class="Margin">
+          Add new Dinofetus
+        </button>
+
+        <button type="button" id="savebutton" class="Margin">
+          Save Changes
+        </button>
+      </div>
+      <!-- <br />
+    <hr />
+    <br /> -->
+      <div class="table">
+        <table>
+          <tbody id="dino-table">
+            <tr>
+              <th>ID</th>
+              <th>Dino Name</th>
+              <th>Race</th>
+              <th>Genetic</th>
+              <th>Strength</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/dinofetus.js"></script>
+  </body>
+</html>
