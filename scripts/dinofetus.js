@@ -61,3 +61,4 @@ $(document).ready(function () {
     for (dinofetus of dinoList) console.log(dinofetus.toString());
   });
 });
+// 0.35
