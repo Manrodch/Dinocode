@@ -29,6 +29,7 @@ $(document).ready(function () {
       alert("Please, add complete data");
       return;
     }
+
     console.log(
       ` Dino Name: ${dinoName.val()} \n Genetic: ${genetic.val()} \n Race: ${race.val()} \n Strength: ${strength.val()} `
     );
@@ -61,4 +62,3 @@ $(document).ready(function () {
     for (dinofetus of dinoList) console.log(dinofetus.toString());
   });
 });
-// 0.35
