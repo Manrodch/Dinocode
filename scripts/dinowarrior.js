@@ -22,11 +22,9 @@ class dinoWarrior {
   }
 }
 
-let dinoBoxer = new dinoWarrior("DinoBoxer", "Jungle Box", "Male", "35");
-dinoBoxer.view();
-
 $(document).ready(function () {
   $("#DinoBoxerButton").on("click", function () {
-    // aca quiero hacer un apennd de los valores de dinoboxer
+    let dinoBoxer = new dinoWarrior("DinoBoxer", "Jungle Box", "Male", "35");
+    dinoBoxer.view();
   });
 });

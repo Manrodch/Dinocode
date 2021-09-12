@@ -8,55 +8,71 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="fondo">
+    <!-- HEADER -->
+    <header>
+      <h3>Select your Dino Warrior</h3>
+    </header>
+
+    <section id="dinoPanel" class="dinoPanelSelect">
       <div>
-        <h1 id="title">dinofetus Collection</h1>
+        <img
+          src="../images/dino-boxer.png"
+          width="150"
+          alt="imágen de dinoboxer"
+        />
+
+        <button id="DinoBoxerButton">DinoBoxer</button>
       </div>
 
-      <div id="dinosdiv" class="form">
-        <h2>Dino Name</h2>
+      <div>
+        <img
+          src="../images/dino-sumo.png"
+          width="150"
+          alt="imágen de dino sumo"
+        />
 
-        <input type="text" id="dinoName" class="Margin" />
-
-        <h2>Race</h2>
-
-        <input type="text" id="race" class="Margin" />
-
-        <h2>Genetic</h2>
-
-        <input type="text" id="genetic" class="Margin" />
-
-        <h2>Strength</h2>
-
-        <input type="number" id="strength" class="Margin" />
-
-        <button type="button" id="button" class="Margin">
-          Add new Dinofetus
-        </button>
-
-        <button type="button" id="savebutton" class="Margin">
-          Save Changes
-        </button>
+        <button id="DinoSumoButton">DinoSumo</button>
       </div>
-      <!-- <br />
-    <hr />
-    <br /> -->
-      <div class="table">
-        <table>
-          <tbody id="dino-table">
-            <tr>
-              <th>ID</th>
-              <th>Dino Name</th>
-              <th>Race</th>
-              <th>Genetic</th>
-              <th>Strength</th>
-            </tr>
-          </tbody>
-        </table>
+
+      <div>
+        <img
+          src="../images/dino-shaoli.png"
+          width="150"
+          alt="imágen de dinoboxer"
+        />
+
+        <button id="DinoShaolinButton">DinoShaolin</button>
+      </div>
+
+      <div>
+        <img
+          src="../images/dino-tecno.png"
+          width="150"
+          alt="imágen de dinoboxer"
+        />
+        <button id="DinoTecnoButton">DinoTecno</button>
       </div>
     </section>
-    <a href="pages/dinowarriors.html">Press here to choose your dinowarriors</a>
+
+    <hr />
+
+    <div id="container">
+      <div id="cajaPrueba">
+        <img src="./images/dino-boxer.png" width="300px" alt="" />
+        <div>
+          <h4>DinoBoxer</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non hic
+            quod voluptates, mollitia minus numquam nihil voluptatem omnis enim
+            consectetur totam corrupti ducimus et inventore sequi. Libero quo
+            asperiores porro.
+          </p>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./scripts/jquery-3.6.0.min.js"></script>
-    <script src="./scripts/dinofetus.js"></script>
+    <script src="./scripts/animation.js"></script>
   </body>
 </html>
