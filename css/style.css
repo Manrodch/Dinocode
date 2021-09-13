@@ -94,7 +94,7 @@ div img {
   border-radius: 15px;
 }
 
-#cajaPrueba {
+.CardDesign {
   display: grid;
   width: 100%;
   height: 400px;
@@ -105,4 +105,9 @@ div img {
 #botonera1 {
   margin: 40px;
   padding: 10px;
+}
+
+#dinoPanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

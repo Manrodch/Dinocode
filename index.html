@@ -12,52 +12,57 @@
     <header>
       <h3>Select your Dino Warrior</h3>
     </header>
-
-    <section id="dinoPanel" class="dinoPanelSelect">
+    <section id="dinoPanel">
       <div>
-        <img
-          src="../images/dino-boxer.png"
-          width="150"
-          alt="imágen de dinoboxer"
-        />
+        <div class="dinoPanelSelect">
+          <div>
+            <img
+              src="../images/dino-boxer.png"
+              width="100"
+              alt="imágen de dinoboxer"
+            />
 
-        <button id="DinoBoxerButton">DinoBoxer</button>
+            <button id="DinoBoxerButton">DinoBoxer</button>
+          </div>
+
+          <div>
+            <img
+              src="../images/dino-sumo.png"
+              width="100"
+              alt="imágen de dino sumo"
+            />
+
+            <button id="DinoSumoButton">DinoSumo</button>
+          </div>
+
+          <div>
+            <img
+              src="../images/dino-shaoli.png"
+              width="100"
+              alt="imágen de dinoboxer"
+            />
+
+            <button id="DinoShaolinButton">DinoShaolin</button>
+          </div>
+
+          <div>
+            <img
+              src="../images/dino-tecno.png"
+              width="100"
+              alt="imágen de dinoboxer"
+            />
+            <button id="DinoTecnoButton">DinoTecno</button>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <img
-          src="../images/dino-sumo.png"
-          width="150"
-          alt="imágen de dino sumo"
-        />
-
-        <button id="DinoSumoButton">DinoSumo</button>
-      </div>
-
-      <div>
-        <img
-          src="../images/dino-shaoli.png"
-          width="150"
-          alt="imágen de dinoboxer"
-        />
-
-        <button id="DinoShaolinButton">DinoShaolin</button>
-      </div>
-
-      <div>
-        <img
-          src="../images/dino-tecno.png"
-          width="150"
-          alt="imágen de dinoboxer"
-        />
-        <button id="DinoTecnoButton">DinoTecno</button>
-      </div>
+      <div></div>
     </section>
 
     <hr />
 
     <div id="container">
-      <div id="cajaPrueba">
+      <div class="CardDesign">
         <img src="./images/dino-boxer.png" width="300px" alt="" />
         <div>
           <h4>DinoBoxer</h4>
@@ -67,12 +72,14 @@
             consectetur totam corrupti ducimus et inventore sequi. Libero quo
             asperiores porro.
           </p>
-          <ul></ul>
+          <ul id="dinoBoxerStats">
+            <li>hola</li>
+          </ul>
         </div>
       </div>
-    </div>
-
+  
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="./scripts/animation.js"></script>
+    <script src="./scripts/dinowarrior.js"></script>
   </body>
 </html>

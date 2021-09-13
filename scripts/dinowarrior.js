@@ -10,21 +10,15 @@ class dinoWarrior {
       strength: strength,
     };
   }
-
   view() {
-    console.log(
-      "Selected warrior: " +
-        this.character +
-        this.fightStyle +
-        this.genetic +
-        this.age
-    );
+    console.log(this.character);
   }
 }
+let dinoBoxer = new dinoWarrior("Rockysaur", "Jungle Box", "Male", "35", "45");
 
 $(document).ready(function () {
   $("#DinoBoxerButton").on("click", function () {
-    let dinoBoxer = new dinoWarrior("DinoBoxer", "Jungle Box", "Male", "35");
+    $("#dinoBoxerStats").append(`<li>${dinoBoxer} `);
     dinoBoxer.view();
   });
 });
