@@ -41,10 +41,10 @@ input {
   height: 30px;
 }
 
-/* button {
+button {
   font-family: "Amatic SC", cursive;
   font-size: 30px;
-} */
+}
 
 .table {
   display: flex;
