@@ -23,7 +23,15 @@ $(document).ready(function () {
   console.log(dinoBoxer.character);
   $("#DinoBoxerButton").on("click", function () {
     $("#dinoBoxerStats").append(
-      `<li> ${dinoBoxer.character.name} <li> ${dinoBoxer.character.fightStyle} <li>${dinoBoxer.character.genetic} <li>${dinoBoxer.character.age} <li>${dinoBoxer.character.strength} `
+      `<img src="./images/dino-boxer.png" width="300px" alt=""/>
+      <div>
+      <h2>Name: ${dinoBoxer.character.name}</h2>
+      <h2>fight Style: ${dinoBoxer.character.fightStyle}</h2>
+      <h2>Genetic: ${dinoBoxer.character.genetic}</h2>
+      <h2>Age:${dinoBoxer.character.age}</h2>
+      <h2>${dinoBoxer.character.strength}</h2>
+      </div>
+      `
     );
   });
 });
