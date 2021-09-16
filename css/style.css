@@ -83,7 +83,7 @@ div img {
   margin: 10px;
 }
 
-.container {
+#container {
   display: none;
   width: 600px;
   height: 400px;
