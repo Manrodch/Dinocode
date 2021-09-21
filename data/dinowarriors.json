@@ -1,0 +1,40 @@
+{
+    "dinoWarriors": [
+        {
+            "image": "./images/dino-boxer.png",
+            "name": "RockySaur",
+            "fightStyle": "Jungle Box",
+            "genetic": "Male",
+            "age": 36,
+            "strength": " 60.000 Kisaurus"
+            
+        },
+        {
+            "image": "./images/dino-sumo.png",
+            "name": "Yokoceratops",
+            "fightStyle": "Desert Sumo",
+            "genetic": "Male",
+            "age": 50,
+            "strength": "60.000 Kisaurus"
+        },
+        
+        {
+            "image": "./images/dino-shaoli.png",
+            "name": "Raptor lee",
+            "fightStyle": "Fang Chung",
+            "genetic": "Male",
+            "age": 27,
+            "strength": "45.000 Kisaurus"
+        },
+        {
+            "image": "./images/dino-tecno.png",
+            "name": "Dinotron",
+            "fightStyle": "Aplied Science",
+            "genetic": "female",
+            "age": 24,
+            "strength": "50.000 Kisaurus"
+        }
+    ]
+
+
+}

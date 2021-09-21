@@ -1,8 +1,9 @@
-const dinoWarriorList = [];
+let dinoWarriorList = [];
 
 class dinoWarrior {
-  constructor(name, fightStyle, genetic, age, strength) {
+  constructor(image, name, fightStyle, genetic, age, strength) {
     this.character = {
+      image: image,
       name: name,
       fightStyle: fightStyle,
       genetic: genetic,
@@ -27,33 +28,37 @@ let dinoSumo = new dinoWarrior(
 );
 
 $(document).ready(function () {
-  console.log(dinoBoxer.character);
+  $.getJSON("./data/dinoWarriors.json", (data, state) => {
+    dinoWarriorList = data.dinoWarriors;
 
-  $("#DinoBoxerButton").on("click", function () {
-    $("#dinoBoxerStats").append(
-      `<img src="./images/dino-boxer.png" width="300px" alt=""/>
-      <div>
-      <h3>Name: ${dinoBoxer.character.name}</h3>
-      <h2>fight Style: ${dinoBoxer.character.fightStyle}</h2>
-      <h2>Genetic: ${dinoBoxer.character.genetic}</h2>
-      <h2>Age:${dinoBoxer.character.age}</h2>
-      <h2>Strength: ${dinoBoxer.character.strength}</h2>
-      </div>
-      `
-    );
-  });
+    if (state !== "success") {
+      console.log("alert" + state);
+      return;
+    }
 
-  $("#DinoSumoButton").on("click", function () {
-    $("#dinoSumoStats").append(
-      `<img src="./images/dino-sumo.png" width="300px" alt=""/>
-      <div>
-      <h3>Name: ${dinoSumo.character.name}</h3>
-      <h2>fight Style: ${dinoSumo.character.fightStyle}</h2>
-      <h2>Genetic: ${dinoSumo.character.genetic}</h2>
-      <h2>Age:${dinoSumo.character.age}</h2>
-      <h2>Strength: ${dinoSumo.character.strength}</h2>
+    for (dino of data.dinoWarriors) {
+      $(".dinoPanelSelection").append(`
+      <div >
+      <img src="${dino.image}" width="100" alt="imágen de ${dino.name}" />
+      <button id="ani" class="dino-selected">${dino.name}</button>
       </div>
-      `
-    );
+      `);
+    }
+
+    $(".dino-selected").on("click", function () {
+      let dinoSelected = dinoWarriorList.find(
+        (dino) => dino.name == this.innerText
+      );
+
+      $(".cardDesign").html(`
+      <img src=${dinoSelected.image} width="300px" alt="imágen de ${dinoSelected.name}"/>
+      <div>
+      <h3>Name: ${dinoSelected.name}</h3>
+      <h2>fight Style: ${dinoSelected.fightStyle}</h2>
+      <h2>Genetic: ${dinoSelected.genetic}</h2>
+      <h2>Age:${dinoSelected.age}</h2>
+      <h2>Strength: ${dinoSelected.strength}</h2>
+      </div>`);
+    });
   });
 });
