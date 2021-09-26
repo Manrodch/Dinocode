@@ -1,32 +1,5 @@
 let dinoWarriorList = [];
 
-class dinoWarrior {
-  constructor(image, name, fightStyle, genetic, age, strength) {
-    this.character = {
-      image: image,
-      name: name,
-      fightStyle: fightStyle,
-      genetic: genetic,
-      age: age,
-      strength: strength,
-    };
-  }
-}
-let dinoBoxer = new dinoWarrior(
-  "Rockysaur",
-  "Jungle Box",
-  "Male",
-  "35",
-  "45000 kisaurus"
-);
-let dinoSumo = new dinoWarrior(
-  "Yokoceratops",
-  "Desert Sumo",
-  "Male",
-  "50",
-  "80000 kisaurus"
-);
-
 $(document).ready(function () {
   $.getJSON("./data/dinoWarriors.json", (data, state) => {
     dinoWarriorList = data.dinoWarriors;
