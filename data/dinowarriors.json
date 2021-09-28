@@ -6,7 +6,7 @@
             "fightStyle": "Jungle Box",
             "genetic": "Male",
             "age": 36,
-            "strength": " 60.000 Kisaurus"
+            "strength":  55000 
             
         },
         {
@@ -15,7 +15,7 @@
             "fightStyle": "Desert Sumo",
             "genetic": "Male",
             "age": 50,
-            "strength": "60.000 Kisaurus"
+            "strength":60000 
         },
         
         {
@@ -24,7 +24,7 @@
             "fightStyle": "Fang Chung",
             "genetic": "Male",
             "age": 27,
-            "strength": "45.000 Kisaurus"
+            "strength": 45000 
         },
         {
             "image": "./images/dino-tecno.png",
@@ -32,7 +32,7 @@
             "fightStyle": "Aplied Science",
             "genetic": "female",
             "age": 24,
-            "strength": "50.000 Kisaurus"
+            "strength": 50000 
         }
     ]
 
