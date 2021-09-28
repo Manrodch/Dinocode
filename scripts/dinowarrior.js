@@ -81,7 +81,9 @@ $(document).ready(function () {
   // fight button function
 
   $(".fight").on("click", function () {
-    let P1confirmed = localStorage.getItem(`P1strength`);
-    console.log("hola" + P1confirmed);
+    let P1confirmed = localStorage.getItem(`P1Strength`);
+    let P2confirmed = localStorage.getItem(`P2Strength`);
+    console.log("Fuerza de player one" + " " + P1confirmed);
+    console.log("Fuerza de player two" + " " + P2confirmed);
   });
 });
