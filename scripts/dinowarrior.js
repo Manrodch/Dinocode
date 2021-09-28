@@ -78,4 +78,10 @@ $(document).ready(function () {
       });
     });
   });
+  // fight button function
+
+  $(".fight").on("click", function () {
+    let P1confirmed = localStorage.getItem(`P1strength`);
+    console.log("hola" + P1confirmed);
+  });
 });
