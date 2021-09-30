@@ -15,7 +15,7 @@
             "fightStyle": "Desert Sumo",
             "genetic": "Male",
             "age": 50,
-            "strength":60000 
+            "strength":70000 
         },
         
         {
@@ -32,7 +32,7 @@
             "fightStyle": "Aplied Science",
             "genetic": "female",
             "age": 24,
-            "strength": 50000 
+            "strength": 80000 
         }
     ]
 

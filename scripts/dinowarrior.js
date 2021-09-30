@@ -85,5 +85,14 @@ $(document).ready(function () {
     let P2confirmed = localStorage.getItem(`P2Strength`);
     console.log("Fuerza de player one" + " " + P1confirmed);
     console.log("Fuerza de player two" + " " + P2confirmed);
+
+    if (P1confirmed == P2confirmed) {
+      console.log("empate");
+    } else if (P1confirmed > P2confirmed) {
+      console.log("player one WINS");
+    } else if (P2confirmed > P1confirmed) {
+      console.log(" player two wins");
+      alert(" playertwo wins");
+    } else;
   });
 });
