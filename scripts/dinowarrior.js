@@ -1,5 +1,5 @@
 let dinoWarriorList = [];
-
+// .JASON CALL
 $(document).ready(function () {
   $.getJSON("./data/dinoWarriors.json", (data, state) => {
     dinoWarriorList = data.dinoWarriors;
@@ -9,7 +9,7 @@ $(document).ready(function () {
       return;
     }
 
-    // Botones de Seleccion de  playerOne
+    //SELECTION BUTTON  DINOWARRIORS PLAYER ONE
 
     for (dino of data.dinoWarriors) {
       $(".dinoPanelSelection").append(`
@@ -24,7 +24,7 @@ $(document).ready(function () {
       let playerOne = dinoWarriorList.find(
         (dino) => dino.name == this.innerText
       );
-      // carta de datos player uno
+      //CARD DRAWING OF PLAYER ONE DINO WARRIOR
       $(".cardDesignPlayerOne").html(`
         <img src=${playerOne.image} width="300px" alt="imágen de ${playerOne.name}"/>
         <div>
@@ -36,14 +36,14 @@ $(document).ready(function () {
         <button id="confirmP1">Confirm</button>
         </div>`);
 
-      //envio de datos de fuerza de player one
+      //CONFIRM PLAYER ONE BUTTON
       $("#confirmP1").on("click", function () {
         console.log(playerOne.strength);
         localStorage.setItem(`P1Strength`, playerOne.strength);
       });
     });
 
-    // Botones de Seleccion de dino playertwo
+    // SELECTION BUTTON  DINOWARRIORS PLAYER ONE
 
     for (dino of data.dinoWarriors) {
       $(".dinoPanelSelection2").append(`
@@ -54,7 +54,7 @@ $(document).ready(function () {
       `);
     }
 
-    // carta de datos player two
+    //CARD DRAWING OF PLAYER ONE DINO WARRIOR
 
     $(".dinoPlayerTwo").on("click", function () {
       let playertwo = dinoWarriorList.find(
@@ -71,14 +71,15 @@ $(document).ready(function () {
         <h2>Strength: ${playertwo.strength}</h2>
         <button id="confirmP2">Confirm</button>
         </div>`);
-      //envio de datos de fuerza de player two
+      //CONFIRM PLAYER ONE BUTTON
       $("#confirmP2").on("click", function () {
         console.log(playertwo.strength);
         localStorage.setItem(`P2Strength`, playertwo.strength);
       });
     });
   });
-  // fight button function
+
+  // FIGHT BUTTON FUNCTION
 
   $(".fight").on("click", function () {
     let P1confirmed = localStorage.getItem(`P1Strength`);

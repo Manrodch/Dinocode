@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* BACKGROUND IMAGE */
 body {
   background-image: url("../images/fondo.png");
   background-position: center center;
@@ -12,7 +12,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
 }
-
+/* TITLES STYLES */
 h1,
 h3 {
   padding: 10px 0px 10px 0px;
@@ -26,26 +26,14 @@ h3 {
   font-size: 40px;
 }
 
+/* BUTTONS STYLE */
+
 button {
   font-family: "Amatic SC", cursive;
   font-size: 40px;
   color: white;
   background-color: black;
   border-radius: 15px;
-}
-
-th {
-  width: auto;
-  border: 1px solid black;
-  margin: 0px;
-  padding: 9px;
-  background-color: white;
-  color: black;
-  border-radius: 6px;
-}
-td {
-  background-color: rgb(192, 192, 192);
-  border-radius: 6px;
 }
 
 /* dinowarriors style */
@@ -57,13 +45,14 @@ div img {
   justify-content: center;
   margin: 10px;
 }
-
+/* PLAYERS TITLES GRID */
 .players {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
 
+/* PLAYERS STATS CARDS AN VS GRID */
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +62,7 @@ div img {
   color: azure;
   border-radius: 15px;
 }
-
+/* VS IMAGE STYLE */
 .vs {
   width: auto;
   height: auto;
@@ -81,7 +70,7 @@ div img {
   align-items: center;
   justify-content: center;
 }
-
+/* DINO STATS CARDS STYLES */
 .cardDesignPlayerOne,
 .cardDesignPlayertwo {
   display: grid;
@@ -92,6 +81,7 @@ div img {
   border-radius: 15px;
 }
 
+/* DINO WARRIOR SELECTION PANEL STYLES*/
 #dinoPanelDesign {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -112,6 +102,8 @@ div img {
   align-items: center;
   justify-content: space-around;
 }
+
+/* FIGHT BUTTON STYLE */
 .fightButtonDiv {
   display: flex;
   justify-content: center;
