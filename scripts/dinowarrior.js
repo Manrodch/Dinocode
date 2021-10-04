@@ -87,12 +87,11 @@ $(document).ready(function () {
     console.log("Fuerza de player two" + " " + P2confirmed);
 
     if (P1confirmed == P2confirmed) {
-      console.log("empate");
+      alert("It´s a draw");
     } else if (P1confirmed > P2confirmed) {
-      console.log("player one WINS");
+      alert(" player One wins");
     } else if (P2confirmed > P1confirmed) {
-      console.log(" player two wins");
-      alert(" playertwo wins");
+      alert(" player Two wins");
     } else;
   });
 });

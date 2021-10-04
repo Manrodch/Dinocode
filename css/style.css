@@ -28,7 +28,10 @@ h3 {
 
 button {
   font-family: "Amatic SC", cursive;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
 }
 
 th {
@@ -108,4 +111,10 @@ div img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.fightButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
 }
